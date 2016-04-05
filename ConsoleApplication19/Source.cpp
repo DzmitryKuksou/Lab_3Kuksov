@@ -56,7 +56,7 @@ void EnterMatrix(int** matrix, int n)
 	{
 		for (int j = 0; j < n; j++)
 		{
-			matrix[i][j] = rand() % 10;
+			matrix[i][j] = rand() % 100;
 		}
 	}
 }
