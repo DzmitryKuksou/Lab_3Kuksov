@@ -76,7 +76,7 @@ int Maxelement(int** matrix1, int a, int k, int l, int n)
 	{
 		for (int j = 0; j < n; j++)
 		{
-			if ((l > j && abs(k - l) >= abs(i - j) && k >= i) || (l > j && k + l >= i + j && k <= i) || (l < j && k + l <= i + j && k >= i) || (l < j && abs(k - l) <= abs(i - j) && k <= i))
+			if ((l > j && k - l <= i - j && k >= i) || (l > j && k + l >= i + j && k <= i) || (l < j && k + l <= i + j && k >= i) || (l < j && k - l >= i - j && k <= i))
 			{
 				if (matrix1[i][j] > a)
 				a = matrix1[i][j];
